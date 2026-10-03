@@ -61,3 +61,5 @@ class Location(Base):
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     region = relationship("Region", back_populates="locations")
+
+
